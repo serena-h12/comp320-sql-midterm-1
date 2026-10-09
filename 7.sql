@@ -1,0 +1,1 @@
+select artist, english_title from views v where entropy = (select max(entropy) from views where artist = v.artist); 

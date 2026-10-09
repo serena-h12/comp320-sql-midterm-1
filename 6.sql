@@ -1,0 +1,1 @@
+select title from episodes where episode_in_season in (select max(episode_in_season) from episodes group by season) group by season;

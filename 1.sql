@@ -1,0 +1,1 @@
+select distinct(count(*)) from editions where (select book_id as b2 from editions where b2.book_id = b1.book_id) as b1;

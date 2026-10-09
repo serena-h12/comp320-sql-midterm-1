@@ -1,0 +1,1 @@
+select name from authors where (death-birth) = (select max(death-birth) from authors);

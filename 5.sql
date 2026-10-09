@@ -1,0 +1,1 @@
+select topic, count(*) from episodes where topic is not null group by topic having count(*) > 1;

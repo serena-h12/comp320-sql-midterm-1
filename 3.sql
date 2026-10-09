@@ -1,0 +1,1 @@
+select title from editions group by title order by count(*) desc limit 1;

@@ -1,0 +1,1 @@
+select year from book_awards group by year order by count(*) desc limit 1
